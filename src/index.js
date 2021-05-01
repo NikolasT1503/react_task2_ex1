@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import App from './App';
 import reportWebVitals from "./reportWebVitals";
 
 const name = "Nikolas";
@@ -17,7 +18,8 @@ const user = {
 
 ReactDOM.render(
   //  myName,
-  <div>Hello, {user.getFullName()}!</div>,
+  //div>Hello, {user.getFullName()}!</div>,
+  <App/>,
   document.getElementById("root")
 );
 
