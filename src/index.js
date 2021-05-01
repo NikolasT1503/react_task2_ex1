@@ -1,14 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+
+const name = "Nikolas";
+
+const myName = <div>Hello, Nikolas!</div>;
+
+const user = {
+  name: "Nikolas",
+  age: 40,
+  getFullName: function () {
+    return `${this.name} ${this.age}`;
+  },
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  //  myName,
+  <div>Hello, {user.getFullName()}!</div>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
